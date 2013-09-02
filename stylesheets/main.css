@@ -3,6 +3,10 @@
 	height: 250px !important;
 }
 
+span{
+  margin-bottom: 15px;
+}
+
 #slides {
     display:none;
 }
@@ -26,13 +30,12 @@
 }
 
 .donations, .download{
-  display: block;
   margin-right: 10px;
 }
 
 .button{
+  display: block;
   width: 100px;
-  display: inline-block;
   font-family: Arial;
   color: #ffffff;
   font-size: 18px;
