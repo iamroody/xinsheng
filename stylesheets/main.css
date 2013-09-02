@@ -27,9 +27,7 @@
 
 .donations, .download{
   display: block;
-  float: right;
-  margin-left: 10px;
-  width: auto;
+  margin-right: 10px;
 }
 
 .button{
