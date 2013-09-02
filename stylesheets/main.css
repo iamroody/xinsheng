@@ -34,7 +34,7 @@ span{
 }
 
 .button{
-  display: block;
+  display: inline-block;
   width: 100px;
   font-family: Arial;
   color: #ffffff;
