@@ -28,7 +28,8 @@
 .donations, .download{
   display: block;
   float: right;
-  margin-left: 20px;
+  margin-left: 10px;
+  width: auto;
 }
 
 .button{
@@ -52,9 +53,6 @@
   background: -moz-linear-gradient(top, #fc3f94, #fc0574);
 }
 
-.download.button{
-  background-color: #78c200;
-}
 
 .button:hover {
   background: #e62097;
