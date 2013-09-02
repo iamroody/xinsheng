@@ -25,19 +25,21 @@
   width: 300px;
 }
 
-.donations{
-  display: inline-block;
+.donations, .download{
+  display: block;
   float: right;
+  margin-left: 20px;
 }
 
 .button{
-  width: 110px;
+  width: 100px;
   display: inline-block;
   font-family: Arial;
   color: #ffffff;
   font-size: 18px;
   padding: 14px;
   text-decoration: none;
+  text-align: center;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -48,6 +50,10 @@
   border: solid #d91c71 2px;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#fc3f94), to(#fc0574));
   background: -moz-linear-gradient(top, #fc3f94, #fc0574);
+}
+
+.download.button{
+  background-color: #78c200;
 }
 
 .button:hover {
