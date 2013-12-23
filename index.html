@@ -6,23 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="心声，一款专为听障人打造的android app，通过语音识别/合成来帮助他们与人交流，这也许可以让他们的世界变得比以前温暖一点点，我们为他们代言！" />
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/main.css">
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-theme.css">
-
-    <script src="javascripts/jquery-1.9.1.min.js"></script>
-   
     <script src="js/bootstrap.js"></script>
     
     <title>心声</title>
   </head>
 
-  <body>
+  <body class="container bs-docs-container">
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
+    <div class="row">
+        <div class="col-md-12">
           <div class="title">
             <h1 id="project_title">心声</h1>
             <h2 id="project_tagline">让世界变得比以前温暖一点点</h2>
@@ -32,14 +28,13 @@
             <button type="button" class="btn btn-primary" href="http://www.wandoujia.com/apps/com.HeartVoice" target="_blank">Android下载</button>
             <button type="button" class="btn btn-primary" href="https://me.alipay.com/totrypsy" target="_blank">捐赠支持</button>
         </div>
-        </header>
+        </div>
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">          
-        <div class="qrcode">
-        <div class="description">
+    <div class="row">
+      <div class="col-md-12">          
+        <div >
           <h3>你也许不知道</h3>
           <span>我们的身边有很多听障人。</span><br>
           <span>他们或者来到这个世界就未曾听到过任何欢声笑语。</span><br>
@@ -52,6 +47,7 @@
           <span>我们为他们代言。</span><br>
         </div>
 
+        <div >
           <h3>使用说明示例</h3>
           <h4>Android Demo</h4>         
           <iframe height=498 width=510 src="http://player.youku.com/embed/XNjA1MTY0NjEy" frameborder=0 allowfullscreen></iframe>
@@ -59,8 +55,9 @@
           <iframe height=498 width=510 src="http://player.youku.com/embed/XNjM4MjkxNDA0" frameborder=0 allowfullscreen></iframe>s
           <h4>打电话 Demo</h4>
           <iframe height=498 width=510 src="http://player.youku.com/embed/XNjM4MjkyMjky" frameborder=0 allowfullscreen></iframe>
+        </div>
 
-
+        <div >
           <h3>此项目的贡献者</h3>
           <ul>
             <li>姜鹏</li>
@@ -75,12 +72,12 @@
           </ul>
         </div>
 
-      </section>
+      </div>
 
     </div>
-    <footer class="inner">
+    <div class="inner">
       <p class="copyright">如果您有好的意见或想法，请点击<a href="https://jinshuju.net/f/e14x0z" target=“_blank”>这里</a>告诉我们</p>
-    </footer>
+    </div>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
