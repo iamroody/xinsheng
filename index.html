@@ -1,210 +1,398 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="zh-cn"> <!--<![endif]-->
+<head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="心声，一款专为听障人打造的android app，通过语音识别/合成来帮助他们与人交流，这也许可以让他们的世界变得比以前温暖一点点，我们为他们代言！" />
-    <meta name="viewport" content="width=device-width">
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>心声</title>
+  <meta name="description" content="">
+  <meta name="author" content="kevin kun">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <script src="js/bootstrap.js"></script>
-    
-    <title>心声</title>
+  <!-- Main Style -->
+  <link rel="stylesheet" href="css/style.css"> 
+  
+  <!-- Color Style -->
+  <link rel="stylesheet" href="css/skins/colors/red.css" name="colors">
+  
+  <!-- Layout Style -->
+  <link rel="stylesheet" href="css/layout/wide.css" name="layout">
+  
+  <!-- Style Switcher Box -->
+  <link rel="stylesheet" href="css/switcher/style.css">
+  
+  <!--[if lt IE 9]>
+      <script src="js/html5.js"></script>
+  <![endif]-->
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  
+</head>
+<body class="one-page">
 
-    <!-- start Mixpanel -->
-    <script type="text/javascript">
-
-    (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-mixpanel.init("1b956e95eafcc970a281e02d8c5438c3");
-
-mixpanel.track("visit");
-</script><!-- end Mixpanel -->
-
-  </head>
-
-  <body>
-      <!-- HEADER -->
-      <div class="header">
-        <div class="container">
-          <div class="row">
-          <div class="col-md-12">
-            <div class="title">
-                <img  src="./images/logo.png">
-                <h1 id="project_title">心声</h1>
-                <h2 id="project_tagline">让世界变得比以前温暖一点点</h2>
+  <div id="wrap" class="boxed">
+    <header class="fixed" id="home">
+      <!-- delete top-bar -->
+      <div class="main-header">
+        <div class="container clearfix">
+          <!-- delete a small button --><!-- this appear on small devices -->
+          <div class="one-third column">
+            <div class="logo">
+              <a href="#home">
+                <img src="images/logo_new.png" alt="心声" />
+              </a>
             </div>
-            <div class="buttons">
-              <div class="download pull-left">
-                <img class="qrcode" src="./images/QRCodeiOS.png">
-                <a type="button" class="btn btn-primary" href="https://itunes.apple.com/us/app/xin-sheng/id741291935" target="_blank">iPhone下载</a>
+          </div><!-- End Logo -->
+         
+          <div class="two-thirds column">
+            <nav id="menu" class="navigation" role="navigation">
+              <a href="#">Show navigation</a><!-- this appear on small devices -->
+              <ul id="nav">
+                <li class="active"><a href="#home">主页</a></li>
+                <li><a href="#videos">视频教程</a></li>
+                <li><a href="#story">用户故事</a></li>
+                <li><a href="#download">下载</a></li>
+              </ul>
+            </nav>
+          </div><!-- End Menu -->
+        </div><!-- End Container -->
+      </div><!-- End main-header -->
+    </header><!-- <<< End Header >>> -->
+   
+    <div class="clearfix">
+      
+        <div style="background:url(images/img/sliders/slider-2/slider-bg-2.jpg) no-repeat;background-position:50% 0;background-size:cover">
+          <div class="container topslider">
+            <div class="eight columns contain">
+              <h2>
+                <span>
+                  让世界变得更温暖一点点
+                </span>
+              </h2>
+              <p>
+                <span>
+                  放一段简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介
+                  </span>
+              </p>
+              <div class="links" data-bottomlinks="20%">
+                <a class="button medium normal fancybox fancybox.iframe" href="iframe_youku.html ">点击观看视频</a>
               </div>
-              <div class="download pull-left">
-                <img class="qrcode" src="./images/QRCodeAndroid.png">
-                <a type="button" class="btn btn-primary" href="http://www.wandoujia.com/apps/im.xinsheng" target="_blank">Android下载</a>
+              <div class="button2">
+                <a href="#download" class="button medium normal">下载</a>
+                <a href="http://shop113584321.taobao.com/" class="button medium color">淘宝</a>
               </div>
-              <!--<a type="button" class="btn btn-primary" href="http://pan.baidu.com/s/1sjI2vKx" target="_blank">电脑版下载</a> -->
-              <a type="button" class="btn btn-primary" href="http://shop113584321.taobao.com/" target="_blank">购买音频线</a>
+              
             </div>
-          </div>
-          </div>
-        </div>
+            <img  src="images/img/sliders/slider-1/slider-item-1.png" class="item eight columns"  data-topimage="16%"/>
+          </div><!-- End Container -->
+            
+        </div><!-- End item -->
+<!--        <div><iframe height=600 width=800 src="http://player.youku.com/embed/XODI5NTQwNjI4" frameborder=0 allowfullscreen></iframe></div>-->
+    <div class="container feature">
+        <div class="one-third column item element-3 Web Animation" data-categories="Web Animation">
+        <a class="fancybox" href="images/img/portfolio/single/image-1-1.jpg" data-fancybox-group="gallery" 
+        title="各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍">
+          <img src="images/img/portfolio/thumb-1.jpg" alt="" class="pic" />
+          
+          <div class="desc"><h3>Feature1</h3><p>放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介</p></div>
+          
+          </a>
       </div>
-      <!-- MAIN CONTENT -->
-
-      <div class="content">
-        <div class="container">
-          <div class="content-block">
-          <div class="row">
-            <div class="col-md-12">
-              <h3>捐赠资助</h3>
-               <p>心声是一款免费的公益软件，如果您想要支持我们的发展，可以为我们提供捐赠资助。所有捐赠资金将用于维持心声的可持续发展，不断增加新的对聋人有帮助的功能。</p>
-               <p>捐款账号：</p>
-               <p>招商银行 6214 8502 9014 5207 朱晨</p>
-               <p>支付宝 zhuchen2105@126.com</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <h3>你也许不知道</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <span>我们的身边有很多听障人。</span><br>
-              <span>他们或者来到这个世界就未曾听到过任何欢声笑语。</span><br>
-              <span>或者被忽然降临的疾病夺去了本该属于他们的平凡人的生活。</span><br>
-              <span>我们希望能用自己微薄的力量，借助不断进步的科技，尝试为他们做一点点弥补。</span><br>
-              <span>语音识别，可以帮街头路人告诉他们车站在何方。</span><br>
-              <span>语音合成，可以帮他们向爸爸妈妈说一声“爸妈，让你们受累了”。</span><br>
-              <span>这或许无法让他们完全恢复往昔的欢颜，但至少可以让他们的世界变得比以前温暖一点点。</span><br>
-              <span>我们做了心声。</span><br>
-              <span>我们为他们代言。</span><br>
-            </div>
-          </div>
-          </div>
-
-          <div class="content-block">
-          <div class="row">
-            <div class="col-md-12">  
-              <h3>使用说明示例</h3>
-            </div>
-          </div>      
-          <div class="row">
-              <div class= "demo col-md-4">
-                <a href="http://v.youku.com/v_show/id_XNzYzNzI2NDY4.html"><h4>面对面对话</h4></a>         
-<embed src="http://player.youku.com/player.php/sid/XNzYzNzI2NDY4/v.swf" allowFullScreen="true" quality="high" width="100%" height="300" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>              </div>
-              <div class= "demo col-md-4">
-                <a href="http://v.youku.com/v_show/id_XNzYzNzI2Mjgw.html"><h4>帮助老师讲课</h4></a>
-<embed src="http://player.youku.com/player.php/sid/XNzYzNzI2Mjgw/v.swf" allowFullScreen="true" quality="high" width="100%" height="300" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>              </div>
-              <div class= "demo col-md-4">
-                <a href="http://v.youku.com/v_show/id_XNzYzNzI2MDY0.html"><h4>使用画画板交流</h4></a>
-<embed src="http://player.youku.com/player.php/sid/XNzYzNzI2MDY0/v.swf" allowFullScreen="true" quality="high" width="100%" height="300" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>              </div>
-<div class= "demo col-md-4">
-                <a href="http://v.youku.com/v_show/id_XNzg1NDIwNTAw.html"><h4>用心声看电视</h4></a>
-<embed src="http://player.youku.com/player.php/sid/XNzg1NDIwNTAw/v.swf" allowFullScreen="true" quality="high" width="100%" height="300" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>              </div>   
-
-              <div class= "demo col-md-4">
-               <a href="http://v.youku.com/v_show/id_XNzYzNzI1Njk2.html"><h4>给视频配字幕</h4></a>
-<embed src="http://player.youku.com/player.php/sid/XNzYzNzI1Njk2/v.swf" allowFullScreen="true" quality="high" width="100%" height="300" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>              </div>
-<div class= "demo col-md-4">
-                <a href="http://v.youku.com/v_show/id_XNzYzNzI0NTE2.html"><h4>用心声打电话</h4></a>
-<embed src="http://player.youku.com/player.php/sid/XNzYzNzI0NTE2/v.swf" allowFullScreen="true" quality="high" width="100%" height="300" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>              </div>    
-          </div>
-
-          <div class="content-block">
-            <div class="row">
-              <div class="col-md-12">  
-                <h3>此项目的贡献者</h3>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12"> 
-                <ul>
-                  <li>姜鹏</li>
-                  <li>付莹</li>
-                  <li>王琰</li>
-                  <li>刘静</li>
-                  <li>韩翼</li>
-                  <li>王欢</li>
-                  <li>吴少博</li>
-                  <li>思晓静</li>
-                  <li>朱晨</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="content-block">
-            <div class="row">
-              <div class="col-md-12">  
-                <h3>合作伙伴</h3>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12"> 
-                <ul>
-                  <li><a href="http://open.voicecloud.cn/">语音识别技术由科大讯飞提供</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="content-block">
-            <div class="row">
-              <div class="col-md-12">  
-                <h3>媒体报道</h3>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12"> 
-                <ul>
-                  <li><a href="http://cndcm.cn/index.php?m=content&c=index&a=show&catid=194&id=19">中国聋人网</a></li>
-                  <li><a href="http://www.geekpark.net/read/view/187723">极客公园</a></li>
-                  <li><a href="http://hope.huanqiu.com/exclusivetopic/2013-12/4644925.html">环球网公益频道</a></li>
-                   <li><a href="http://gongyi.qq.com/a/20131210/008461.htm">腾讯公益</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
+      <!-- End -->
+      
+     <!-- item 2 -->
+      <div class="one-third column item element-3 Logo Photography" data-categories="Logo Photography">
+        <a class="fancybox" href="images/img/portfolio/single/image-1-2.jpg" data-fancybox-group="gallery" 
+        title="各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍">
+          <img src="images/img/portfolio/thumb-2.jpg" alt="" class="pic" />
+          
+          <div class="desc"><h3>Feature2</h3><p>放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介</p></div>
+          
+          </a>
       </div>
-      <!-- FOOTER -->
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-          <div class="col-md-12"> 
-            <p class="copyright">如果您有好的意见或想法，请点击<a href="https://jinshuju.net/f/e14x0z" target=“_blank”>这里</a>告诉我们</p>
-            <p>Email:xinsheng.im@gmail.com</p>
-          </div>
-          </div>
-        </div>
-      </div>
-      <a style="display:none" href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
-
-    
-     <!-- start Google Analytics -->
+      <!-- End -->
+      
+      <!-- item 3 -->
+      <div class="one-third column item element-3 Web Photography" data-categories="Web Photography">
+        <a class="fancybox" href="images/img/blog/single/image-1-3.jpg" data-fancybox-group="gallery" 
+        title="各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍各种介绍 ">
+          <img src="images/img/portfolio/thumb-3.jpg" alt="" class="pic" />
+          
+          <div class="desc"><h3>Feature3</h3><p>放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介</p></div>
+          
+          </a>
+      </div>    
+    </div>
      
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+   </div><!-- End slider -->
+   
+   <!-- ======================== Start Our Services ======================== -->
+   
+   <div class="services style-2 home bottom-3" id="videos">
+     <div class="container clearfix">
+     
+       <div class="sixteen columns"> 
+        <h2 class="title">视频教程  </h2> 
+        <p class="description bottom-4">
+          放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介
+           放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介 
+        </p>
+       </div>
+     
+       <div class="one-third column">
+         <div class="item bottom-4">
+            <div class="desc"><h4>视频1</h4></div>
+            <a class="fancybox fancybox.iframe" href="iframe_youku.html" >
+            <img src="images/img/portfolio/thumb-1.jpg" alt="" class="pic" />
+            </a>
+         </div>
+       </div><!-- End item -->
+       
+       <div class="one-third column">
+         <div class="item bottom-4">
+           <div class="desc"><h4>视频1</h4></div>
+            <a class="fancybox fancybox.iframe" href="iframe_youku.html">
+            <img src="images/img/portfolio/thumb-1.jpg" alt="" class="pic" />
+            </a>
+         </div>
+       </div><!-- End item -->
+       
+       <div class="one-third column">
+         <div class="item bottom-4">
+           <div class="desc"><h4>视频1</h4></div>
+            <a class="fancybox fancybox.iframe" href="iframe_youku.html">
+            <img src="images/img/portfolio/thumb-1.jpg" alt="" class="pic" />
+            </a>
+         </div>
+       </div><!-- End item -->
+       
+       <div class="one-third column">
+         <div class="item bottom-4">
+           <div class="desc"><h4>视频1</h4></div>
+            <a class="fancybox fancybox.iframe" href="iframe_youku.html">
+            <img src="images/img/portfolio/thumb-1.jpg" alt="" class="pic" />
+            </a>
+         </div>
+       </div><!-- End item -->
+       
+       <div class="one-third column">
+         <div class="item bottom-4">
+           <div class="desc"><h4>视频1</h4></div>
+            <a class="fancybox fancybox.iframe" href="iframe_youku.html">
+            <img src="images/img/portfolio/thumb-1.jpg" alt="" class="pic" />
+            </a>
+         </div>
+       </div><!-- End item -->
+       
+       <div class="one-third column">
+         <div class="item bottom-4">
+           <div class="desc"><h4>视频1</h4></div>
+            <a class="fancybox fancybox.iframe" href="iframe_youku.html">
+            <img src="images/img/portfolio/thumb-1.jpg" alt="" class="pic" />
+            </a>
+         </div>
+       </div><!-- End item -->
+       
+     </div><!-- End Container -->
+   </div><!-- End services -->
+   
+   <!-- ======================== End ======================== -->
+   
+   <!-- ======================== Start Our Work ======================== -->
+   
+    <div class="portfolio bottom-4" id="story">
+     <div class="container top-5 clearfix">
+    
+    <div class="sixteen columns"> 
+        <h2 class="title">用户故事</h2> 
+        <p class="description bottom-4">
+          放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介 
+        </p>
+        <div class="container story">
+            <div class="one-third column" >
+                <a class="fancybox fancybox.iframe" href="iframe_story.html" data-fancybox-group="story" >
+                <img src="images/img/portfolio/thumb-2.jpg" alt="" class="pic" />
+          
+                <div class="desc"><h3>故事1</h3><p>放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介</p></div>
+          
+                </a>
+            </div>
+            <div class="one-third column" >
+                <a class="fancybox fancybox.iframe" href="iframe_story.html" data-fancybox-group="story" >
+                <img src="images/img/portfolio/thumb-2.jpg" alt="" class="pic" />
+          
+                <div class="desc"><h3>故事1</h3><p>放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介</p></div>
+          
+                </a>
+            </div>
+            <div class="one-third column" >
+                <a class="fancybox fancybox.iframe" href="iframe_story.html" data-fancybox-group="story" >
+                <img src="images/img/portfolio/thumb-2.jpg" alt="" class="pic" />
+          
+                <div class="desc"><h3>故事1</h3><p>放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介放一段简介</p></div>
+          
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    <div class="clearfix"></div>
+    
+    
+    
+     </div><!-- End Container -->
+    </div><!-- End portfolio -->
+    
+    <!-- ======================== End ======================== -->
+    
+    
+    <!-- ======================== Start About us ======================== -->
+   
+   <div class="home-bg bottom-3" id="download">
+     <div class="container clearfix">
+     
+    
+<!--        <h2 class="title">关于我们</h2> -->
+          <div class="eight columns left ">
+              <a class="button medium color" href="https://itunes.apple.com/us/app/xin-sheng/id741291935"><i class="fa fa-apple fa-lg"></i>&nbsp;&nbsp;iphone下载</a>
+              <div>
+                <img src="images/iphone.png" class="QRcode">
+              </div>
+         </div>
+          <div class="eight columns right">
+              <a class="button medium color" href="http://www.wandoujia.com/apps/im.xinsheng"><i class="fa fa-android fa-lg"></i>&nbsp;&nbsp;android下载</a>
+              <div>
+              <img src="images/android.png" class="QRcode">
+              </div>
+              
+         </div>
+       
 
-  ga('create', 'UA-55063391-1', 'auto');
-  ga('send', 'pageview');
+       
+    </div><!-- End Container -->
+   </div><!-- End about -->
+   
+   
+     
+    
+   
+   <footer>
+   
+     <div class="footer-top" id="download">
+      <div class="container clearfix">
+        
+        <div class="four columns widget">
+          <h3 class="title">此项目的贡献者
+            </h3>
+          <div class="contributor">
+              姜鹏<br>
+              付莹<br>
+              王琰<br>
+              刘静<br>
+              韩翼<br>
+              张新宇<br>
+              思晓静<br>
+              李凯文<br>
+              姚成灶<br>
+              朱晨<br>
+            </div>
+        </div><!-- End Tweets Widget -->
+        
+        <div class="four columns widget">
+          <h3 class="title">媒体报道</h3>
+          <ul class="contributor">
+            <li><a href="http://cndcm.cn/index.php?m=content&c=index&a=show&catid=194&id=19">中国聋人网</a></li>
+              <li><a href="http://www.geekpark.net/read/view/187723">极客公园</a></li>
+              <li><a href="http://hope.huanqiu.com/exclusivetopic/2013-12/4644925.html">环球网公益频道</a></li>
+              <li><a href="http://gongyi.qq.com/a/20131210/008461.htm">腾讯公益</a></li>
+            </ul>
+        </div><!-- End Flickr Widget -->
+        
+        <div class="four columns widget">
+          <div class="contributor"> 
+          <h3 class="title">合作伙伴</h3>
+          <a href="http://open.voicecloud.cn/">语音识别技术由科大讯飞提供</a>
+          
+          </div>
+        </div>
+          <div class="four columns widget">
+            <h3 class="title">建议</h3>
+              <div class="contributor"><p>如果您有好的意见或想法，请点击<a href="https://jinshuju.net/f/e14x0z" target="“_blank”">这里</a>告诉我们</p></div>
+              
+          </div>
+          <!-- End Subscribe Widget -->
+        
+      </div><!-- End container -->
+     </div><!-- End footer-top -->
+     
+     <div class="footer-down">
+      <div class="container clearfix">
+        
+        <div class="sixteen columns">
+         <span class="copyright">
+         © Copyright 2013 All Rights Reserved. by XinSheng</span>
+        </div><!-- End copyright -->
+        
+      </div><!-- End container -->
+     </div><!-- End footer-top -->
+     
+   </footer><!-- <<< End Footer >>> -->
+  
+  </div><!-- End wrap -->
+  
+  <!-- Start JavaScript -->
+  <script src="js/jquery-1.9.1.min.js"></script> <!-- jQuery library -->
+  <script src="js/jquery.easing.1.3.min.js"></script> <!-- jQuery Easing --> 
+  <script src="js/jquery-ui/jquery.ui.core.js"></script> <!-- jQuery Ui Core-->
+  <script src="js/jquery-ui/jquery.ui.widget.js"></script> <!-- jQuery Ui Widget -->
+  <script src="js/jquery-ui/jquery.ui.accordion.js"></script> <!-- jQuery Ui accordion--> 
+  <script src="js/jquery-cookie.js"></script> <!-- jQuery cookie --> 
+  <script src="js/ddsmoothmenu.js"></script> <!-- Nav Menu ddsmoothmenu -->
+  <script src="js/jquery.flexslider.js"></script> <!-- Flex Slider  -->
+  <script src="js/colortip.js"></script> <!-- Colortip Tooltip Plugin  -->
+  <script src="js/tytabs.js"></script> <!-- jQuery Plugin tytabs  -->
+  <script src="js/jquery.ui.totop.js"></script> <!-- UItoTop plugin  -->
+  <script src="js/carousel.js"></script> <!-- jQuery Carousel  -->
+  <script src="js/jquery.isotope.min.js"></script> <!-- Isotope Filtering  -->
+  <script src="js/twitter/jquery.tweet.js"></script> <!-- jQuery Tweets -->
+  <script src="js/jflickrfeed.min.js"></script> <!-- jQuery Flickr -->
+  <script src="js/social-options.js"></script> <!-- social options , twitter, flickr.. -->
+  <script src="js/doubletaptogo.js"></script> <!-- Touch-friendly Script  -->
+  <script src="js/fancybox/jquery.fancybox.js"></script> <!-- jQuery FancyBox -->
+  <script src="js/fancybox/jquery.fancybox-thumbs.js"></script>
+    
+  <script src="js/jquery.sticky.js"></script> <!-- jQuery Sticky -->
+  <!-- Start onepage js -->
+  <script src="js/one-page/jquery.scrollTo.js"></script> 
+  <script src="js/one-page/jquery.nav.js"></script>
+  <script>
+  $(document).ready(function() {
+	$('#nav').onePageNav({
+	  begin: function() {
+	  console.log('start')
+	  },
+	  end: function() {
+	  console.log('stop')
+	  },
+	  filter: ':not(.external)',
+	  scrollThreshold: 0.25,
+	  scrollOffset: 200
+	});				 
+  });
+  </script>
+  <!-- End onepage js -->
+  <script src="js/custom.js"></script> <!-- Custom Js file for javascript in html -->
+  <!-- End JavaScript -->
+  
 
-</script>
-  </body>
+    
+</body>
 </html>
