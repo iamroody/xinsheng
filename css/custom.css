@@ -49,10 +49,12 @@
 	position: relative;
 	top:0px;
 	left:0px;
-	width: 66px;
-
 	margin-top: 5px;
 	text-align: center;
+	width: 88px;
+  	font-size: 14px;
+  	padding: 14px;
+  	float: left;
 }
 .container.feature {
     padding:55px 0;
