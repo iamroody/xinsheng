@@ -79,6 +79,13 @@ span.copyright {
     text-align: center;
 }
 
+ul#namelist > li{
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 12px;
+  margin: 14px 0 0 0;
+  padding-left: 46%;
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -96,5 +103,7 @@ span.copyright {
 #download .right {
     text-align: center;
 }
+
+
 
 }
